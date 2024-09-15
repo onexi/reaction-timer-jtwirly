@@ -1,40 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Reaction Timer App
+
+## Overview
+
+This is a simple Reaction Timer App built with Next.js. It allows users to test their reaction times by clicking the stop button as soon as it changes color after a random delay. The user can enter their name, and their reaction time is recorded and displayed in a list of times.
+
+### Features
+- Randomized delay between 1 and 20 seconds.
+- Prevents early clicks by ignoring them and displaying a warning.
+- Cooldown period for false attempts to prevent spam-clicking.
+- Logs the user's reaction time and name and displays them on the page.
+- Stores the fastest reaction time on the server.
+
+## Demo
+
+Here's how the app works:
+1. The user enters their name in the input field.
+2. Click the "Start" button to begin the timer.
+3. After a random delay, the "Stop" button will turn green.
+4. Click the "Stop" button as quickly as possible once the color changes.
+5. The reaction time will be recorded and displayed alongside the user’s name.
+<img width="973" alt="Screen Shot 2024-09-15 at 4 53 10 PM" src="https://github.com/user-attachments/assets/44d60fa2-3e23-431f-b2b6-4018f30e06f2">
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (>=14.x.x)
+- npm (>=6.x.x)
+- Git (>=2.x.x)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Installation
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Clone the repository:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   ```bash
+   git clone https://github.com/your-username/reaction-timer.git
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
