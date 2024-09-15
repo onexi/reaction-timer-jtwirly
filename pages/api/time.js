@@ -2,7 +2,7 @@ let fastestTime = null;
 
 export default function handler(req, res) {
   if (req.method === 'POST') {
-    const { time } = req.body;
+    const { time, name } = req.body;
 
     // If this is the first time or the new time is faster
     if (fastestTime === null || time < fastestTime) {
